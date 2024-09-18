@@ -8,7 +8,12 @@ def check_year(year: int) -> bool:
     else:
         return False
 
-if check_year(2000):
-    print("високосный год")
-else:
-    print("не високосный год")
+
+def year(year: int):
+    if check_year(year):
+        print("Високосный год")
+    else:
+        print("Обычный год")
+
+year(2024)
+year(2013)
